@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+.title {
+  text-align: center;
+}
+
 .navbar {
   border:1px solid #ccc;
   border-width:1px 0;
@@ -41,6 +45,18 @@ h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 8vh;
   color: white;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 5vh;
+}
+
+h3 {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 6vh;
 }
 
 hr {
