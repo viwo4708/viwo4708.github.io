@@ -83,12 +83,3 @@ p{
   color: white;;
   margin: 25px 50px;
 }
-
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: #9694DD;
-}
