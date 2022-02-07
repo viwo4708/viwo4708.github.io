@@ -2,6 +2,6 @@
 ## It's a meant to be a rudimentary, but functional personal landing page  
 To view as a website, click [here](https://viwo4708.github.io/vikki-wong/).
 
-The webstite was built with help from code from these websites:  
+The website was built with help from code from these websites:  
 https://www.w3schools.com/howto/howto_js_slideshow.asp  
 https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/  
