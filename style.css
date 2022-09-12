@@ -111,7 +111,7 @@ li a:hover {
 }
 
 .active, .dot:hover {
-  background-color: black;
+  background-color: rgb(180, 180, 180);
 }
 
 /* Fading animation */
