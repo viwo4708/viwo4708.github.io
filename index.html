@@ -5,86 +5,259 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Vikki Wong</title>
+  <title>About</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Khand&family=Lato&family=Righteous&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-<div class="topbanner">
-  <h1>VIKKI WONG</h1>
-  <h2>portrait photographer, computer science student</h2>
-</div>
-
-<ul class="navbar">
-  <li><a href="https://viwo4708.github.io/vikki-wong/">home</a></li>
-  <li><a href="https://viwo4708.github.io/vikki-wong/black-and-white/">black and white photography</a></li>
-  <li><a href="https://viwo4708.github.io/vikki-wong/about/">about</a></li>
-</ul>
-
-<br>
-
-<div class="slideshowtitle">
-  <h3>recent shots</h3>
-</div>
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="https://raw.githubusercontent.com/viwo4708/vikki-wong/main/web%20final%20image%20assets/VWP_0120.jpg" alt="image 1" style="width:100%">
+  <div class="topbanner">
+    <div id="nametitle" onClick="slide('home')">
+      <h1>VIKKI</h1>
+      <h1>WONG</h1>
+    </div>
+    <div id="slidelinks">
+      <p class="slidelink" onClick="slide('webdev')">web developer</p>
+      <p class="slidelink" onClick="slide('currentposition')">learning assistant</p>
+      <p class="slidelink" onClick="slide('graphd')">graphic designer</p>
+      <p class="slidelink" onClick="slide('photog')">photographer</p>
+      <p class="slidelink" onClick="slide('music')">musician</p>
+      <p class="slidelink" onClick="slide('resume')">want to get in touch?</p>
+    </div>
   </div>
 
-  <div class="mySlides fade">
-    <img src="https://raw.githubusercontent.com/viwo4708/vikki-wong/main/web%20final%20image%20assets/VWP_0018.jpg" alt="image 2" style="width:100%">
+  <div class="container">
+    <div class="pages">
+      
+      <div class="page one">
+        <img id="mainimage" src="JLW0466-6.jpg">
+        <p style="text-align: center; margin-top: 3%;">
+          Senior at CU Boulder, graduating May 2023
+          <br>
+          <br>
+          Majoring in Marketing with Computer Science Integration
+          <br>
+          <br>
+          Minoring in Creative Technology and Design
+        </p>
+      </div>   
+
+      <div class="page two">
+        <h2>Web Development</h2>
+        <div class="content-container">
+        <img id="coloss" src="colo_ss.png" style="width: 55%;">
+        <p>
+          In March of 2022, I joined forces with a fellow student to attempt my first Hackathon. We ended up creating
+          Colorado Photoshoot Location Finder, a functional proof of concept for a site that allows photographers to find shoot locations
+          based on images that visually inspire them. The images are tagged with descriptors relating to qualities such as mood, ambience,
+          ease of access, and general ligthing conditions. I envisioned a way to crowdsource and distribute the collective knowledge of 
+          local photographers.
+        <br>
+        <br>
+          I designed and implemented the UI/UX, as well as integrated Google Maps into our site. We ended up winning Best UI/UX overall. not bad
+          for a first showing!
+          <br>
+          <br>
+          Check it out on Devpost <a target="_blank" href="https://devpost.com/software/photo-shoot-location-finder">here</a>, or view as a 
+          live site <a target="_blank" href="https://viwo4708.github.io/photolocator_co/">here.</a>
+        </p>
+        </div>
+        <div class="content-container">
+          <p>
+          Other little projects I've done include <a target="_blank" href="https://viwo4708.github.io/web-repo/midterm/">Nail Polish Name Generator</a>
+          and <a target="_blank" href="https://viwo4708.github.io/web-repo/webLA/badphonenum/">Terrible Phone Number Input</a>.
+          <br>
+          <br>
+          My coursework has also given me experience in Bootstrap, PostgreSQL, Docker, NodeJS, and EJS. For creating wireframes, I use Figma and Adobe XD.
+          </p>
+        </div>
+      </div>
+
+      <div class="page three">
+        <h2>Learning Assistant for Intro to Web Development</h2>
+        <div class="content-container">
+          <p>
+            Leading recitations and holding office hours is a highlight of my week, every week. I love being able to help people
+            turn their creative designs into functional websites, as well as helping people break down and overcome problems. Its very 
+            satisfying to write pseudocode on whiteboards, find and fix elusive bugs, and to see the amazing ideas people come up with. 
+            <br>
+            <br>
+            Topics covered in the course include wireframing, visual design best practices, API integration, basic coding principles, and HTML/CSS/JavaScript.
+          </p>
+          <img style="width: 40%; height: 12%; margin-top: 1%;" src="Asset 859.png">
+        </div>
+      </div>
+
+      <div class="page four">
+        <h2>Graphic Design</h2>
+        <div class="content-container">
+
+          <div id="slideshow1" class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="Food Branding-3.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Food Branding-4.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="Food Branding-2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <img src="Food Branding-1.png" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+            
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+            </div>
+            </div>
+
+          <p>
+            The prompt for this project was "design packaging for a food product that captures your personality." As a lover of spicy food,
+            I knew I had to design a hot sauce. I wanted the product to come across as fun, friendly, humorous, and a gentle introduction for those
+            who may be new to hot sauce. 
+            <br>
+            <br>
+            The background pattern, layout, and graphics are all original and created in Adobe Illustrator. The 3D product render was created 
+            in Adobe Dimension, featuring my actual kitchen countertop. All copy is original as well. 
+          </p>
+        </div>
+
+        <div class="content-container">
+          <p>
+            I was asked to shoot product photos for a local jewelry maker. I thought the photos turned out really well, so I took the liberty of
+            turning them into ads. I tried to mirror and enhance the earthy, peaceful atmosphere of the photographs, as well as the dainty, feminine look of the 
+            jewelry.
+            <br>
+            <br>
+            All layouts and text design were created using Canva. All copy is original.
+          </p>
+
+          <div id="slideshow2" class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="3.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="4.png" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+            
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+              <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+              <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+              <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+            </div>
+            </div>
+        </div>
+      </div>
+
+       <div class="page five">
+        <h2>Photography</h2>
+        <div class="content-container">
+          <p>
+            I started shooting seriously in 2019, my freshman year of college. Though my first love is fashion and portrait photography, I've since shot for local clothing stores (Apocalypse and
+            Common Threads), restaurants, and Denver Fashion Week, as well as a wide variety of senior/grad photoshoots and personal 
+            branding shoots. All my shooting and editing skills are self taught.
+            <br>
+            <br>
+            My work has been published in 303 Magazine! Check out that and more at my <a target="_blank" href="https://vikkiwongphotography.wixsite.com/mysite">photography website</a>.
+            <br>
+            <br>
+            I currently shoot with a trusty Nikon D750 paired with a 50mm prime lens, as well as film cameras when the mood strikes (Nikon FM, Canon AE-1). I do most of my 
+            editing in DarkTable.
+            <br>
+            <br>
+          <a target="_blank" href="https://www.instagram.com/vikki_wshoots/"> <img src="new-Instagram-logo-white-glyph-1200x1199.png" style="width: 40px;"> </a>
+          </p>
+          <img src="Screenshot 2022-12-27 175859.png" style="width: 60%;">
+        </div>
+      </div>
+
+      <div class="page six">
+        <h2>Vocal Arrangements</h2>
+        <div class="content-container">
+          <p>
+          I have been writing and arranging music for vocal ensembles since high school. Currently, I am a Co-President of On That Note Acapella
+          at CU Boulder. Writing arrangements for this group, and being able to direct and perform my work with such talented people is an incredibly rewarding experience.
+          <br>
+          <br>
+          Check out demos couple of my acapella arrangements below:
+          </p>
+        </div>
+        <div class="content-container">
+          <div style="width: 30%">
+          <p>
+            This Love by Maroon 5
+          </p>
+          </div>
+          <audio controls style="width: 30%">
+            <source src="This Love Demo (1).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+         </div>
+         <div class="content-container">
+          <div style="width: 30%">
+          <p>
+            Fireflies by Owl City   
+          </p>
+          </div>
+          <audio controls style="width: 30%">
+            <source src="Fireflies_DEMO.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="content-container">
+          <p>
+          If you would like to use my arrangements, please reach out!
+          </p>
+        </div>
+      </div>   
+
+      <div class="page seven">
+        <h2>Resume/Contact Info</h2>
+        <div class="content-container">
+          <iframe src="website resume.pdf" style="width: 50vw; height: 60vh;"></iframe>
+          <p>
+          Email: vikkiw123@gmail.com
+          <br>
+          <br>
+          LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/vikki-wong-5287a2185/">https://www.linkedin.com/in/vikki-wong-5287a2185/</a>
+          <br>
+          <br>
+          I'm always open to discuss my work! Email is the best way to reach me, but I check LinkedIn fairly frequently as well. 
+          </p>
+        </div>
+      </div>  
+
+    </div>
   </div>
-
-  <div class="mySlides fade">
-    <img src="https://raw.githubusercontent.com/viwo4708/vikki-wong/main/web%20final%20image%20assets/DSC_0293.jpg" alt="image 3" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://github.com/viwo4708/vikki-wong/blob/main/web%20final%20image%20assets/VWP_0197.jpg?raw=true" alt="image 4" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://github.com/viwo4708/vikki-wong/blob/main/web%20final%20image%20assets/VWP_2380.jpg?raw=true" alt="image 5" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://github.com/viwo4708/vikki-wong/blob/main/web%20final%20image%20assets/VWP_3845.jpg?raw=true" alt="image 6" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://github.com/viwo4708/vikki-wong/blob/main/web%20final%20image%20assets/VWP_4381.jpg?raw=true" alt="image 7" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="https://github.com/viwo4708/vikki-wong/blob/main/web%20final%20image%20assets/VWP_5538.jpg?raw=true" alt="image 8" style="width:100%">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-</div>
 
 <script src="index.js"></script>
 </body>
