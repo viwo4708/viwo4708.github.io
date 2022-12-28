@@ -45,9 +45,6 @@ function currentSlide(n, slideshow) {
 }
 
 function showSlides(n, slideshow) {
-  
-
-
   var i;
   var slides = slideshow.getElementsByClassName("mySlides");
   var dots = slideshow.getElementsByClassName("dot");
@@ -61,4 +58,15 @@ function showSlides(n, slideshow) {
   }
   slides[slideshow.currentSlideIndex-1].style.display = "block";  
   dots[slideshow.currentSlideIndex-1].className += " active";
+}
+
+function toggleEmail() {
+  console.log("this works!");
+
+  var x = document.getElementById("emailaddy");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }

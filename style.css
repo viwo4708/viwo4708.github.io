@@ -28,14 +28,39 @@ h2 {
   padding-top: 2%;
 }
 
-p {
-  font-family: 'Exo', sans-serif;
+h3 {
+  font-family: 'Khand', sans-serif;
+  font-style: italic;
   color: white;
-  font-size: 16px;
+  font-size: 5vh;
+}
+
+h4 {
+  font-family: 'Khand', sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 3vh;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  font-size: 17.5px;
 }
 
 img {
   align-self: center;
+}
+
+ul li {
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+#emailbutton:hover {
+  cursor: pointer;
 }
 
 .topbanner {
@@ -66,7 +91,7 @@ img {
   text-align: left;
   padding-right: 0;
   padding-left: 2%;
-  padding-top: .5%;
+  /* padding-top: .5%; */
   line-height: 40%;
   background-color: black;
 }
@@ -74,16 +99,16 @@ img {
 .content-container {
   padding-left: 3%;
   padding-right: 3%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   display: flex;
   flex-direction: row;
   gap: 2%;
 }
 
-
 .slidelink {
-  font-size: 17px;
+  font-size: 21px;
+  line-height: 4px;
 }
 
 .slidelink:hover {
@@ -121,6 +146,25 @@ flex-direction: row;
 .page {
 width: 100%;
 transition: all 1s;
+}
+
+button {
+  background-color: #8876cf;
+  border: none;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 40px;
+  margin-top: 24px;
+}
+
+button:hover {
+  background-color: #765FD3;
 }
 
 * {box-sizing:border-box}
@@ -214,7 +258,12 @@ transition: all 1s;
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+
+  h1{
+    font-size: 55px;
+  }
+
   .content-container {
     padding-left: 20px;
     padding-right: 20px;
@@ -227,25 +276,18 @@ transition: all 1s;
 
   .topbanner {
     text-align: center;
-    height: 12vh;
+    height: 36vh;
     margin: 0;
     padding: 0;
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1;
   }
 
   img {
-    width: 100%
-  }
-
-  iframe {
-    display: none;
-  }
-
-  p {
-    font-size: 25px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: top;
   }
   
 }

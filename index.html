@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Khand&family=Lato&family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Exo:wght@300&family=Khand&family=Lato&family=Righteous&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
           local photographers.
         <br>
         <br>
-          I designed and implemented the UI/UX, as well as integrated Google Maps into our site. We ended up winning Best UI/UX overall. Not bad
+          I designed and implemented the UI/UX and integrated Google Maps into our site. We ended up winning Best UI/UX overall. Not bad
           for a first showing!
           <br>
           <br>
@@ -262,22 +263,56 @@
       </div>   
 
       <div class="page seven">
-        <h2>Resume/Contact Info</h2>
+        <h2>Let's Connect!</h2>
         <div class="content-container">
-          <iframe src="website resume.pdf" style="width: 50vw; height: 60vh;"></iframe>
           <p>
-          Email: vikkiw123@gmail.com
-          <br>
-          <br>
-          LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/vikki-wong-5287a2185/">https://www.linkedin.com/in/vikki-wong-5287a2185/</a>
-          <br>
-          <br>
           I'm always open to discuss my work! Email is the best way to reach me, but I check LinkedIn fairly frequently as well. 
           </p>
+          <div>
+          <a style ="text-decoration: none;" target="_blank" href="https://www.linkedin.com/in/vikki-wong-5287a2185/"> <img src="linkedin-3-512.png" style="width: 40px;"> </a>
+          <img id="emailbutton" style="margin-left: 15px; margin-right: 15px; padding-bottom: 6px; width: 40px;" src="pngfind.com-white-png-icons-5577850.png" onclick="toggleEmail()" >
+          <p style="float: right; display: none;" id="emailaddy">vikkiw123@gmail.com</p>
+          </div>
+        </div> 
+        <div class="content-container">
+        <h3>Resume</h3> 
+        <a style="margin-left: 20vw;" href="website resume.pdf" target="_blank"><button>View/Download PDF</button></a>
         </div>
-      </div>  
-
-    </div>
+        <div class="content-container">
+        <div>
+        <h4>Learning Assistant - ATLAS Institute - Boulder, CO</h4>
+        <ul>
+          <li>Teaching undergrad students HTML, CSS, JavaScript, visual design principles, and API integration.</li>
+          <li>Leading recitations, holding office hours, grading assignments, responding to student emails in a timely manner.</li>
+          <li>Helping students debug code and develop problem solving/research skills.</li>
+        </ul>
+        <br>
+        <h4>Analyst Intern - SurroundUs Services - Longmont, CO</h4>
+        <ul>
+          <li>Composed a detailed report of solutions for pain points in customer communication channels.</li>
+          <li>Learned VBA, wrote a custom Excel macro to streamline a large data cleaning project</li>
+        </ul>
+        <br>
+        <h4>Floor Assistant/Photographer - Apocalypse - Boulder, CO</h4>
+        <ul>
+          <li>Brainstormed, planned, and casted creative fashion shoots to promote the brand on social media.</li>
+          <li>Enhanced customer experience by providing attentive service.</li>
+        </ul>
+        <br>
+        <h4>Undergraduate Research Assistant - COLUMN Lab - Boulder, CO</h4>
+        <ul>
+          <li>Conducted two live interviews each week with other Reddit focused graduate researchers to gather qualitative data.</li>
+          <li>Analyzed large dataset of subreddits and their mutual users to draw conclusions about sense of virtual community on Reddit.</li>
+        </ul>
+        <br>
+        <h4>Content Production Intern - United Chinese Americans - Washington DC (Remote)</h4>
+        <ul>
+          <li>Researched and recorded interviews with influential figures in the Chinese American community. </li>
+          <li>Published five video episodes to YouTube with interview footage about intersectional Chinese American experiences.</li>
+        </ul>
+        </div>
+        </div>
+      </div>
   </div>
 
 <script src="index.js"></script>
