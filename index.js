@@ -9,13 +9,13 @@ if (pagename == "home") {
   translate = 0;
 } else if (pagename == "webdev") {
   translate = -100;
-} else if (pagename == "currentposition") {
-  translate = -200;
 } else if (pagename == "graphd") {
-  translate = -300;
+  translate = -200;
 } else if (pagename == "photog") {
-  translate = -400;
+  translate = -300;
 } else if (pagename == "music") {
+  translate = -400;
+} else if (pagename == "upto") {
   translate = -500;
 } else if (pagename == "resume") {
   translate = -600;
