@@ -61,12 +61,14 @@ function showSlides(n, slideshow) {
 }
 
 function toggleEmail() {
-  console.log("this works!");
 
   var x = document.getElementById("emailaddy");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    x.style.display = "none"
   }
+   // Copy the text inside the text field
+  navigator.clipboard.writeText("vikkiw123@gmail.com");
+
 }
