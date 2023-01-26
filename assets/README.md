@@ -1,1 +1,3 @@
-## Brand new personal website as of December 2022
+## Personal Website
+
+built from scratch with vanilla js, html, css. designed by me. 
