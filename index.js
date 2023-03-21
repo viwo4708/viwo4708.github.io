@@ -5,19 +5,63 @@ slide = (pagename) => {
 // direction === "next" ? translate -= translateAmount : translate += translateAmount;
 let translate = 0;
 
+let navids = ["link1", "link2", "link3", "link4", "link5", "link6"];
+let navlinks = [];
+
+for (id in navids) {
+  navlinks.push(document.getElementById(navids[id]));
+}
+
+for (link in navlinks) {
+  navlinks[link].style.fontSize = "21px";
+  navlinks[link].style.fontWeight = "normal";
+  navlinks[link].style.lineHeight = "1px";
+  navlinks[link].style.fontStyle = "normal";
+}
+
+document.body.style.overflowY = "hidden";
+
 if (pagename == "home") {
   translate = 0;
+  // document.getElementById("nametitle").style.color = "white";
 } else if (pagename == "webdev") {
+  navlinks[0].style.fontSize = "35px";
+  navlinks[0].style.fontWeight = "bold";
+  navlinks[0].style.lineHeight = "0px";
+  navlinks[0].style.fontStyle = "italic";
   translate = -100;
 } else if (pagename == "graphd") {
+  navlinks[1].style.fontSize = "35px";
+  navlinks[1].style.fontWeight = "bold";
+  navlinks[1].style.lineHeight = "0px";
+  navlinks[1].style.fontStyle = "italic";
+  document.body.style.overflowY = "scroll";
   translate = -200;
 } else if (pagename == "photog") {
+
+  navlinks[2].style.fontSize = "35px";
+  navlinks[2].style.fontWeight = "bold";
+  navlinks[2].style.lineHeight = "0px";
+  navlinks[2].style.fontStyle = "italic";
   translate = -300;
 } else if (pagename == "music") {
+  navlinks[3].style.fontSize = "35px";
+  navlinks[3].style.fontWeight = "bold";
+  navlinks[3].style.lineHeight = "0px";
+  navlinks[3].style.fontStyle = "italic";
   translate = -400;
 } else if (pagename == "upto") {
+  navlinks[4].style.fontSize = "35px";
+  navlinks[4].style.fontWeight = "bold";
+  navlinks[4].style.lineHeight = "0px";
+  navlinks[4].style.fontStyle = "italic";
   translate = -500;
 } else if (pagename == "resume") {
+  navlinks[5].style.fontSize = "35px";
+  navlinks[5].style.fontWeight = "bold";
+  navlinks[5].style.lineHeight = "0px";
+  navlinks[5].style.fontStyle = "italic";
+  document.body.style.overflowY = "scroll";
   translate = -600;
 }
 pages.forEach(
