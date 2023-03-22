@@ -1,5 +1,27 @@
 /* https://medium.com/@codefoxx/how-to-create-a-slide-transition-between-separate-pages-with-html-css-and-javascript-bb7a14393d1 */
 
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a896fa;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a79fc9;
+}
+
 html {
   scroll-behavior: smooth;
 }
