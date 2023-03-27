@@ -104,10 +104,23 @@ function showSlides(n, slideshow) {
   dots[slideshow.currentSlideIndex-1].className += " active";
 }
 
-function toggleEmail() {
+function toggleEmailMobile() {
 
-  var x = document.getElementById("emailaddy");
-  if (x.style.display === "none") {
+  var x = document.getElementById("emailaddymobile");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none"
+  }
+   // Copy the text inside the text field
+  navigator.clipboard.writeText("vikkiw123@gmail.com");
+
+}
+
+function toggleEmailPC() {
+
+  var x = document.getElementById("emailaddyPC");
+  if (x.style.display == "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none"
