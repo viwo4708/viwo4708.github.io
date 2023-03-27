@@ -129,17 +129,3 @@ function toggleEmailPC() {
   navigator.clipboard.writeText("vikkiw123@gmail.com");
 
 }
-
-
-//lightmode
-document.body.style.backgroundColor = "black";
-
-function changeTheme() {
-  
-  if (document.body.style.backgroundColor == "black") {
-    document.body.style.backgroundColor = "white";
-  } else {
-    console.log("else triggered");
-    document.body.style.backgroundColor = "black";
-  }
-}
