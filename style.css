@@ -38,7 +38,7 @@ h1 {
   font-family: 'Righteous', cursive;
   color: #9176ff;
   font-size: 70px;
-  line-height: 40%;
+  line-height: 10%;
   letter-spacing: 4px;
   font-style: italic;
 }
@@ -157,7 +157,7 @@ a:hover {
 #mainimage {
   margin: .5%;
   display: block;
-  width: 35%;
+  width: 36%;
 }
 
 .container {
@@ -199,7 +199,7 @@ button:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 49%;
+  max-width: 51%;
   position: relative;
   margin: auto;
 }
