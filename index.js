@@ -126,7 +126,8 @@ function toggleEmailPC() {
   } else {
     x.style.display = "none"
   }
-   // Copy the text inside the text field
+   // Copy the text inside the text field 
+   //comment to test push
   navigator.clipboard.writeText("vikkiw123@gmail.com");
 
 }
