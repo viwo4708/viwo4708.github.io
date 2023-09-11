@@ -44,7 +44,7 @@ if (pagename == "home") {
   navlinks[2].style.lineHeight = "0px";
   navlinks[2].style.fontStyle = "italic";
   translate = -300;
-} else if (pagename == "music") {
+} else if (pagename == "personal") {
   navlinks[3].style.fontSize = "35px";
   navlinks[3].style.fontWeight = "bold";
   navlinks[3].style.lineHeight = "0px";
