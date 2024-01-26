@@ -55,7 +55,6 @@ if (pagename == "home") {
   navlinks[4].style.fontWeight = "bold";
   navlinks[4].style.lineHeight = "0px";
   navlinks[4].style.fontStyle = "italic";
-  document.body.style.overflowY = "scroll";
   translate = -500;
 } else if (pagename == "resume") {
   navlinks[5].style.fontSize = "35px";
