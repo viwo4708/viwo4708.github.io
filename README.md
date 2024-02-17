@@ -1,4 +1,4 @@
-# This is my current personal website as of January 2023
+# This is my current personal website.
 
 It is a portfolio of my web development and graphic design work, as well as a design project in and of itself.
 
