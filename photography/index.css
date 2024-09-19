@@ -80,8 +80,9 @@ h3, h2 {
     }
 
     .navbar {
-        gap: 5vw;
-        font-size: 2vh;
-
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: center;
+        gap: 10%;
     }
 }
