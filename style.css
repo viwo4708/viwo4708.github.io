@@ -144,6 +144,16 @@ a:hover {
   color: #9176ff;
 }
 
+#portfoliolink {
+  text-decoration: none;
+  font-family: 'Schoolbell', cursive;
+  font-weight: 400;
+}
+
+#portfoliolink:hover {
+  text-decoration: underline;
+}
+
 .content-container {
   padding-left: 3%;
   padding-right: 3%;
