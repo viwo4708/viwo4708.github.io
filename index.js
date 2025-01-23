@@ -50,6 +50,7 @@ if (pagename == "home") {
   navlinks[3].style.fontWeight = "bold";
   navlinks[3].style.lineHeight = "0px";
   navlinks[3].style.fontStyle = "italic";
+  document.body.style.overflowY = "scroll";
   translate = -400;
 } else if (pagename == "upto") {
   navlinks[4].style.fontSize = "35px";
