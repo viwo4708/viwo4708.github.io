@@ -294,17 +294,3 @@ button:hover {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-@media only screen and (max-width: 850px) {
-  #pc {
-    display: none;
-  }
-
-  #mobile {
-    display: block;
-  }
-
-  body {
-    overflow-y: scroll;
-  }
-}
