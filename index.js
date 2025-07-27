@@ -38,12 +38,10 @@ if (pagename == "home") {
   document.body.style.overflowY = "scroll";
   translate = -200;
 } else if (pagename == "photog") {
-
   navlinks[2].style.fontSize = "35px";
   navlinks[2].style.fontWeight = "bold";
   navlinks[2].style.lineHeight = "0px";
   navlinks[2].style.fontStyle = "italic";
-  document.body.style.overflowY = "scroll";
   translate = -300;
 } else if (pagename == "personal") {
   navlinks[3].style.fontSize = "35px";

@@ -11,6 +11,9 @@ function showfash() {
     document.getElementById("aboutnav").style.textDecoration = "none";
     document.getElementById("about").style.display = "none";
 
+    document.getElementById("pubnav").style.textDecoration = "none";
+    document.getElementById("published").style.display = "none";
+
     globalThis.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
 
@@ -26,6 +29,9 @@ function showhead() {
 
     document.getElementById("aboutnav").style.textDecoration = "none";
     document.getElementById("about").style.display = "none";
+
+    document.getElementById("pubnav").style.textDecoration = "none";
+    document.getElementById("published").style.display = "none";
 
     globalThis.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
@@ -43,6 +49,28 @@ function showgrad() {
     document.getElementById("aboutnav").style.textDecoration = "none";
     document.getElementById("about").style.display = "none";
 
+    document.getElementById("pubnav").style.textDecoration = "none";
+    document.getElementById("published").style.display = "none";
+
+    globalThis.scrollTo({ top: 0, left: 0, behavior: "instant" });
+}
+
+function showpub(){
+    document.getElementById("pubnav").style.textDecoration = "underline";
+    document.getElementById("published").style.display = "block";
+
+    document.getElementById("about").style.display = "none";
+    document.getElementById("aboutnav").style.textDecoration = "none";
+
+    document.getElementById("fashion").style.display = "none";
+    document.getElementById("fashnav").style.textDecoration = "none";
+
+    document.getElementById("headshots").style.display = "none";
+    document.getElementById("headnav").style.textDecoration = "none";
+
+    document.getElementById("gradnav").style.textDecoration = "none";
+    document.getElementById("grads").style.display = "none";
+
     globalThis.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
 
@@ -58,6 +86,9 @@ function showabout(){
 
     document.getElementById("gradnav").style.textDecoration = "none";
     document.getElementById("grads").style.display = "none";
+
+    document.getElementById("pubnav").style.textDecoration = "none";
+    document.getElementById("published").style.display = "none";
 
     globalThis.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
