@@ -19,11 +19,13 @@ for (link in navlinks) {
   navlinks[link].style.fontStyle = "normal";
 }
 
-document.body.style.overflowY = "hidden";
+// document.body.style.overflowY = "hidden";
+document.body.style.overflowY = "scroll";
 
 if (pagename == "home") {
   translate = 0;
   // document.getElementById("nametitle").style.color = "white";
+  document.body.style.overflowY = "hidden";
 } else if (pagename == "webdev") {
   navlinks[0].style.fontSize = "35px";
   navlinks[0].style.fontWeight = "bold";
@@ -35,7 +37,7 @@ if (pagename == "home") {
   navlinks[1].style.fontWeight = "bold";
   navlinks[1].style.lineHeight = "0px";
   navlinks[1].style.fontStyle = "italic";
-  document.body.style.overflowY = "scroll";
+  // document.body.style.overflowY = "scroll";
   translate = -200;
 } else if (pagename == "photog") {
   navlinks[2].style.fontSize = "35px";
@@ -48,7 +50,7 @@ if (pagename == "home") {
   navlinks[3].style.fontWeight = "bold";
   navlinks[3].style.lineHeight = "0px";
   navlinks[3].style.fontStyle = "italic";
-  document.body.style.overflowY = "scroll";
+  // document.body.style.overflowY = "scroll";
   translate = -400;
 } else if (pagename == "upto") {
   navlinks[4].style.fontSize = "35px";
@@ -61,7 +63,7 @@ if (pagename == "home") {
   navlinks[5].style.fontWeight = "bold";
   navlinks[5].style.lineHeight = "0px";
   navlinks[5].style.fontStyle = "italic";
-  document.body.style.overflowY = "scroll";
+  // document.body.style.overflowY = "scroll";
   translate = -600;
 }
 pages.forEach(
