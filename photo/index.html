@@ -29,9 +29,9 @@
 
         .navbar {
             display: grid;
-            grid-template-columns: 30% 30%;
+            grid-template-columns: 35% 35%;
             justify-content: center;
-            gap: 10% 15vw;
+            gap: 3vw;
         }
 
         #aboutphoto {
@@ -43,7 +43,6 @@
 <body>
     <div class="header">
         <h1>vikki wong photography :-&#41;</h1>
-        <div id="aboutnav" style="cursor: pointer;" onclick="showabout()"><h2>about -></h2></div>
     </div>
 
     <div class="navbar">
@@ -51,6 +50,8 @@
         <div class="navitem" id="headnav" onclick="showhead()">headshots</div>
         <div class="navitem" id="gradnav" onclick="showgrad()">seniors&grads</div>
         <div class="navitem" id="pubnav" onclick="showpub()">published</div>
+        <div class="navitem" id="designnav"><a target="_blank" href="https://vikkiwong.com/atlas-masters/design-club-mag-reid/">designclubmag</a></div>
+        <div class="navitem" id="aboutnav" onclick="showabout()">about</div>
     </div>
 
     <div class="pagecontent" id="fashion">
