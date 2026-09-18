@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikki Wong</title>
+
+    <link rel="stylesheet" href="../index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="pageheader">
+        <div class="pagetitle"><p>&lt;&gt; onBeat DUO &lt;/&gt;</p></div>
+        <div class = "navbar">
+            <div class="navlink"><a href="../index.html"><p>home</p></a></div>
+            <div class="navlink"><p><a href="../about.html">about</a></p></div>
+        </div>
+    </div>
+
+    <div class="halfnhalf">
+        <div style="width: 40vw;">
+            <iframe style="height: 100vh; width: 30vw;"
+                src="https://youtube.com/embed/VgKAxAd87rk?autoplay=1&mute=1&playlist=VgKAxAd87rk&loop=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div>
+            <ul style="font-size: 1.7rem; font-weight: 600;">
+                <li>A beat driven, collaborative rhythm game with a handmade controller</li>
+                <li>Designed to create forced proximity and connection between players and dance-like movement</li>
+                <li>P5JS (Frontend and game logic), Node.js / Express / Socket.io (Backend & Real-time WebSockets), Arduino (C++ Serial Communication)</li>
+                <li>Rhino 3D, laser-cut MDF, custom soldered arcade hardware</li>
+                <li>Draws on years of music theory and arrangement experience, levels were choreographed and charted by hand</li>
+                <li>Shown at ATLAS EXPO 2026, a student exhibition for creative technology projects</li>
+                <li><a href="https://project-726s1.vercel.app/" target="_blank">Online Demo -></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="sectiontitle"><p>Inspiration</p></div>
+
+    <div class="section">
+
+        <img class="fullwidthimage" src="../photo_assets/onbeat_duo/marvin_and_anna.jpg" alt="Two grad students, one male presenting and one female presenting, play a collaborative handmade video game together in a bright classroom. They are concentrating on the game, but smiling at the same time.">
+
+        <p style="font-weight: 700;">
+            As a person who is terrible at video games and generally does not play them, the ones that I’ve enjoyed most have featured the following:
+        </p>
+
+        <ul style="align-self: flex-start; width: 100%;">
+            <li>Forced, often inconvenient collaboration</li>
+            <li>Simple, easy-to-learn mechanics</li>
+            <li>Something that makes you laugh</li>
+        </ul>
+
+        <p>
+            For this project, I wanted to create a game experience that encompasses all of the above. As I was brainstorming, I knew I wanted to
+            incorporate music into the game somehow, so the logical next step was to create a rhythm game. 
+        </p>
+
+        <p>
+            The funny thing is, I have historically struggled with rhythm games, which is an extension of my struggles with video games in general. I find 
+            that for me it’s unintuitive to instantly map the correct action (a swipe, a press, stepping on an arrow on the floor), to what the visual 
+            interface of the game is telling me to do. I consider myself to have a strong sense of rhythm, but my lack of skill with video game interfaces 
+            and controllers held me back from fully feeling the music and enjoying rhythm games. 
+        </p>
+    </div>
+
+    <div class="sectiontitle"><p>The First Level</p></div>
+
+    <div class="section">
+        <p>
+            My solution, then, was to build an idiot proof controller (What could be more simple than slamming a big button?), and making a bold, 
+            minimal visual interface. My original plan was to make a grid of nine buttons that mapped to targets on the screen, but I realized 
+            that that would make it difficult to tell which notes were going to which target. So I switched to a circular layout, with five 
+            targets in total. 
+        </p>
+        
+        <img class="fullwidthimage" src="../photo_assets/onbeat_duo/game_screen.png" alt="Screenshot of a rhythm game, showing bright green and purple dots on a black screen moving outwards towards targets arraged in a circle.">
+    
+    </div>
+
+    <div class="halfnhalf">
+       <div>
+        <img src="../photo_assets/onbeat_duo/sketch.png" alt="a sketch on lined paper of the circular layout of buttons">
+       </div>
+       <div style="width: 50vw">
+        <p style="font-size: 1.5rem;">
+            My first controller prototype was literally 5 numbered circles drawn on a piece of paper. I used Gemini to help me understand the 
+            logic and code structure of a basic rhythm game, and then implemented what I learned in P5JS. The first song that I choreographed 
+            a level for was ET by Katy Perry. While creating the level, I moved my hands on the paper “controller”, to get a sense of what the 
+            movement would feel like. 
+        </p>
+       </div>
+    </div>
+
+    <div class="section">
+        <p>
+            After ordering a 5 pack of big, slammable arcade buttons off of Amazon, I got to work learning how they worked and how to wire them 
+            up. The gist is, I spent an inordinate amount of time soldering wire to all these buttons to get them connected to an Arduino, and 
+            then wrote a simple script to stream data from the computer’s serial port to the game server in real time, essentially telling the 
+            game which buttons were pressed down and when. 
+        </p>
+
+        <p>
+            Before finalizing the controller dimensions, I screwed all the buttons into a piece of cardboard to test additional levels, timing, 
+            and tactile feedback. 
+        </p>
+    </div>
+
+    <div class="halfnhalf">
+        <div>
+        <img src="../photo_assets/onbeat_duo/cardboard1.jpg" alt="plastic arcade buttons screwed into a piece of cardboard, with a lot of exposed wiring and Arduino board showing">
+        </div>
+        <div>
+        <img src="../photo_assets/onbeat_duo/cardboard2.jpg" alt="plastic arcade buttons screwed into a piece of cardboard">
+        </div>
+    </div>
+
+    <div class="section">
+        <p>
+            Once I felt satisfied that my controller design was effective, it was time to build a sturdy enclosure to mount the buttons and 
+            hide the wires, as well as provide a solid, smackable surface for what I imagined would be aggressive gameplay. I settled on laser 
+            cutting medium-density fiberboard from my local Home Depot because it was relatively cheap, very sturdy, and easy to paint. I made 
+            my measurements, spun up a design in Rhino3D (shout out makercase.com!), cut the pieces out on a laser cutter, and wood glued the 
+            whole thing together. The final touch was spray painting it black, and voila! It was ready to be used to play my game. 
+        </p>
+        <img class="fullwidthimage" src="../photo_assets/onbeat_duo/finished_controller.jpg">
+    </div>
+
+    <div class="sectiontitle"><p>Exhibition and Gameplay</p></div>
+
+    <div class="halfnhalf">
+        <iframe style="height: 100vh; width: 30vw;"
+            src="https://youtube.com/embed/fMum3gnBK18?autoplay=1&mute=1&playlist=fMum3gnBK18&loop=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+        <iframe style="height: 100vh; width: 30vw;"
+            src="https://youtube.com/embed/mtqFIQ5RIzA?autoplay=1&mute=1&playlist=mtqFIQ5RIzA&loop=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="section">
+        <p>
+            Showing this game at ATLAS EXPO 2026 was one of the most fun and rewarding experiences of my life. SO MANY people of varying ages 
+            and backgrounds came through and tried my game out. I had the time of my life playing the game with new people, as well as watching 
+            others take on the challenge of staying on beat in each level that I designed. There was so much laughter and some amused panic at 
+            the harder levels I created, and I really felt I had fulfilled my goal of creating an experience that created connections between 
+            people. It was also so gratifying to share my love of music with so many people, and give them an opportunity to feel, play, and 
+            interact with these songs in a new way. 
+        </p>
+    </div>
+
+    <div class="halfnhalf">
+        <img src="../photo_assets/onbeat_duo/vikki_wires.png" alt="Vikki, an asian woman, holds up a tangle of wires and lights while making a bemused face.">
+        <div style="font-size: 1.5rem;">
+        <p>
+            Building OnBeat DUO pushed me so far out of my comfort zone in the best way. It was a fully hands on, trial by fire learning experience, and I learned so many new skills, as well as how to plan and execute complex projects over a longer time frame. 
+        </p>
+        <br>
+        <p>
+            All technical challenges aside, I loved building something fun, a little bit goofy, musical, and memorable for people to play with and enjoy. 
+        </p>
+        </div>
+    </div>
+
+   <div class="footer">
+        <div class="footerlinks">
+                <div><a href="../index.html"><p>home</p></a></div>
+                <div><p><a href="../about.html">about</a></p></div>
+        </div>
+        <div>
+            <p>designed and built by vikki wong 2026</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

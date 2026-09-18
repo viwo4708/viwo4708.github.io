@@ -1,0 +1,250 @@
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  /* font-weight: 200; */
+  font-style: normal;
+}
+
+
+.quicksand-generaltext {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300 700;
+  font-style: normal;
+}
+
+.centered-container {
+    justify-content: center;
+    padding: 4vw;
+}
+
+
+.flexboxgrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 100px;
+    gap: 3rem 3rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.halfnhalf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh 6vw;
+    gap: 8vw;
+}
+
+.sectiontitle {
+    font-family: "Schoolbell", cursive;
+    font-size: 4.5rem;
+    padding-left: 6vw;
+    padding-top: 6vh;
+}
+
+.pageheader {
+    display: flex;
+    align-items: center;
+    /* gap: 40vw; */
+    font-family: "Schoolbell", cursive;
+    padding-left: 3vw;
+    padding-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.pagetitle {
+    font-size: 4.5rem;
+    width: 75vw;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navlink {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.footer {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.hovercontainer {
+    width: 30%;
+    justify-content: center;
+    position: relative;
+}
+
+.hoverimage {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.hovertext {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hovercontainer:hover .overlay {
+  opacity: .8;
+}
+
+.fullwidthimage {
+    padding: 0 4vw;
+    align-self: center;
+}
+
+.section {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    font-size: 1.5rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+body {
+  margin: 0;                 /* Removes default page spacing */
+  min-height: 100vh;         /* Forces the parent to take the full viewport height */
+  justify-content: center;   /* Centers your grid horizontally */
+  align-items: center;       /* Centers your grid vertically */
+  background-color: #EEE2FF;
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 10vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 620;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color:#a15eff;
+}
+
+.mobile {
+    display: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.tapcard { position: relative; overflow: hidden; border-radius: 30px; }
+
+.tapoverlay {
+  position: absolute; inset: 0;
+  background: #ffffff; /* Solid background */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 30px;
+}
+.tapoverlaytext {
+    width: 90%;
+    color: black;
+    font-size: 6vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+}
+.tapcard.active .tapoverlay {
+  opacity: .8;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  /* CSS rules here apply only if the viewport is 768px wide or smaller */
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+}
